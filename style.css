@@ -1,0 +1,115 @@
+body {
+    background-color: white;
+}
+
+header {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#grid {
+    display: inline-block;
+}
+
+#numbers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:  repeat(4, 1fr);
+    width: 500px;
+    grid-gap: 5px;
+    
+}
+
+@media only screen and (max-width: 640px){
+    #numbers {
+        width: 300px;
+    }
+
+ 
+}
+
+
+#numbers button {
+    background-color: black;
+    color:white;
+    box-shadow: 1px -1px 1px gray;
+}
+
+#numbers button:active {
+    background-color: black;
+    color:white;
+    box-shadow: 0 0 0;
+}
+
+#flex {
+    display:inline-block;
+}
+
+#functions {
+    display: flex;
+    flex-direction: column;
+}
+
+#functions button {
+    margin: 2.5px;
+    width: 55px;
+    background-color: gold;
+    box-shadow: 1px -1px 1px gray;
+}
+
+#functions button:active {
+    margin: 2.5px;
+    width: 55px;
+    background-color: bisque;
+    box-shadow: 0 0 0 gray;
+}
+
+
+#main {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Equals  {
+
+    background-color: silver !important;
+    color: black !important;
+}
+
+#Output {
+    display: block;
+    margin: 050px auto;
+    width: 300px;
+    background-color: black;
+}
+
+@media only screen and (max-width: 640px){
+    #Output {
+        width: 300px;
+    }
+}
+
+#inside {
+    margin: 0 auto;
+    text-align: start;
+
+}
+
+.span {
+    margin: 20px auto;   
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+    padding: 10px;
+    color: white
+}
+
+.numbers {
+    text-align: end;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+ 
